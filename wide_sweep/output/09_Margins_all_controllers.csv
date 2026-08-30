@@ -1,0 +1,34 @@
+Controller,Region,Kc (evaluated),Ti (s),Td (s),Gain margin (dB),Phase margin (deg),Verdict
+Conventional PI,Acidic,0.113,364.959,0.0,18.192,40.323,Acceptable
+Conventional PI,Near-neutral,0.113,364.959,0.0,-0.833,-8.457,MARGINAL — below 6 dB / 30 deg
+Conventional PI,Alkaline,0.113,364.959,0.0,27.533,86.033,Comfortable
+IMC PI,Acidic,0.049,820.336,0.0,27.891,76.287,Comfortable
+IMC PI,Near-neutral,0.049,820.336,0.0,6.824,50.296,Acceptable
+IMC PI,Alkaline,0.049,820.336,0.0,35.016,97.827,Comfortable
+IMC-scheduled PID,Acidic,0.072,1391.086,104.756,25.671,87.683,Comfortable
+IMC-scheduled PID,Near-neutral,0.003,1214.18,86.005,24.332,100.065,Comfortable
+IMC-scheduled PID,Alkaline,0.046,534.961,23.956,34.285,93.431,Comfortable
+Pure gain-scheduled PID,Acidic,0.085,374.253,0.0,20.79,45.066,Comfortable
+Pure gain-scheduled PID,Near-neutral,0.028,374.253,0.0,11.339,56.685,Comfortable
+Pure gain-scheduled PID,Alkaline,0.071,374.253,0.0,31.583,88.029,Comfortable
+Horn IMC-PI,Acidic,0.104,820.336,0.0,21.356,68.204,Comfortable
+Horn IMC-PI,Near-neutral,0.104,820.336,0.0,0.289,3.0,MARGINAL — below 6 dB / 30 deg
+Horn IMC-PI,Alkaline,0.104,820.336,0.0,28.481,105.365,Comfortable
+C1,Acidic,0.014,374.253,0.0,36.353,74.392,Comfortable
+C1,Near-neutral,0.014,374.253,0.0,17.203,63.268,Comfortable
+C1,Alkaline,0.014,374.253,0.0,45.56,89.617,Comfortable
+C2,Acidic,0.035,1320.846,0.0,31.162,88.021,Comfortable
+C2,Near-neutral,0.003,374.253,0.0,31.182,73.396,Comfortable
+C2,Alkaline,0.072,228.471,0.0,31.18,75.992,Comfortable
+C3,Acidic,0.024,820.336,0.0,33.911,82.329,Comfortable
+C3,Near-neutral,0.024,820.336,0.0,12.845,72.544,Comfortable
+C3,Alkaline,0.024,820.336,0.0,41.037,93.963,Comfortable
+C4,Acidic,0.011,1391.086,104.756,41.931,89.644,Comfortable
+C4,Near-neutral,0.001,683.462,29.752,41.931,89.644,Comfortable
+C4,Alkaline,0.022,386.461,18.159,41.931,89.644,Comfortable
+C2b,Acidic,0.275,1320.846,0.0,13.374,71.582,Comfortable
+C2b,Near-neutral,0.005,374.253,0.0,26.11,68.57,Comfortable
+C2b,Alkaline,0.047,228.471,0.0,34.964,79.733,Comfortable
+C4b,Acidic,0.162,1391.086,104.756,18.595,84.738,Comfortable
+C4b,Near-neutral,0.003,683.462,29.752,31.311,88.791,Comfortable
+C4b,Alkaline,0.027,386.461,18.159,40.167,89.564,Comfortable
