@@ -515,10 +515,13 @@ lines = [
      "macros disabled (using the pre-loaded example geometry).", False),
     ("", False),
     ("To enable the macro", True),
-    ("Open in Excel, allow macros (this file is .xlsm). Press Alt+F11, right-click VBAProject > Import File, "
-     "and import ShellTubeOptimizer.bas (generated alongside this workbook). Then Developer tab > Insert > "
-     "Button, draw it on the Optimizer sheet, and assign macro RunOptimizer. Or just press Alt+F8 and run "
-     "RunOptimizer directly.", False),
+    ("This ships as a plain .xlsx -- openpyxl (which built this file) cannot author a real embedded VBA "
+     "project, so a fabricated .xlsm would have a mismatched, Excel-rejected file format. To add the macro: "
+     "open this .xlsx in Excel, press Alt+F11, right-click VBAProject > Import File, and import "
+     "ShellTubeOptimizer.bas (included alongside this workbook). Then File > Save As > pick 'Excel Macro-Enabled "
+     "Workbook (.xlsm)' -- Excel itself now writes a real vbaProject.bin. Then Developer tab > Insert > Button, "
+     "draw it on the Optimizer sheet, and assign macro RunOptimizer. Or just press Alt+F8 and run RunOptimizer "
+     "directly, no button needed.", False),
     ("", False),
     ("Three corrections made vs. the source notebook (all flagged inline where they occur)", True),
     ("1. Kern Re-Rate: bundle-diameter constants K1/n1 are now looked up by pass count (Table 12.4) instead "
@@ -799,7 +802,7 @@ for s in [ws0, ws, ws2, ws3, ws4, ws5, ws6]:
     s.freeze_panes = "A6"
 ws.freeze_panes = "A6"
 
-out_path = "/tmp/claude-0/-home-user-Claude/485fa6e6-dda5-5a6f-befa-fd08ce7dd6bb/scratchpad/xlsx_build/Shell_and_Tube_HX_Design.xlsm"
+out_path = "/tmp/claude-0/-home-user-Claude/485fa6e6-dda5-5a6f-befa-fd08ce7dd6bb/scratchpad/xlsx_build/Shell_and_Tube_HX_Design.xlsx"
 wb.save(out_path)
 
 bas_path = "/tmp/claude-0/-home-user-Claude/485fa6e6-dda5-5a6f-befa-fd08ce7dd6bb/scratchpad/xlsx_build/ShellTubeOptimizer.bas"
